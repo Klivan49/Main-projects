@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter For EVERTHING (nearly)</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1>Вводи число</h1>
+    <div style="display: grid; justify-content: center; width: auto;">
+    <button class="button" onclick="location.href='index.html'">Обратно</button>
+    <table class="table">
+      <tr>
+        <th>Системы счисления</th>
+        <th>Масса</th>
+      </tr>
+      <tr>
+        <th>Десятеричная</th>
+        <th><input type="text" id="10" oninput="validateInput(this, '10')"></th>
+      </tr>
+      <tr>
+        <th>Восьмеричная</th>
+        <th><input type="text" id="8" oninput="validateInput(this, '8')"></th>
+      </tr>
+      <tr>
+      <th>Двоичная</th>
+      <th><input type="text" id="2" oninput="validateInput(this, '2')"></th>
+      </tr>
+      <tr>
+      <th>Шестнадцатеричная</th>
+      <th><input type="text" id="16" oninput="validateInput(this, '16')"></th>
+      </tr>
+    </table>
+    </div>
+  <script src="script/converters/numberSystem.js"></script>
+</body>
+</html>

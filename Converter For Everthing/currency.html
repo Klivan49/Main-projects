@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converter For EVERYTHING (nearly)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Вводи валюту</h1>
+  <div style="display: grid; justify-content: center; width: auto;">
+    <button class="button" onclick="location.href='index.html'">Обратно</button>
+    <table class="table">
+      <tr>
+        <th>Валюта</th>
+        <th>Сумма</th>
+      </tr>
+      <tr>
+        <td>Буны</td>
+        <td><input type="number" id="BYN" oninput="convertFrom('BYN')"></td>
+      </tr>
+      <tr>
+        <td>Даляры</td>
+        <td><input type="number" id="USD" oninput="convertFrom('USD')"></td>
+      </tr>
+      <tr>
+        <td>Евро</td>
+        <td><input type="number" id="EUR" oninput="convertFrom('EUR')"></td>
+      </tr>
+    </table>
+    <div id="result" style="margin-top: 20px; font-size: 1.2em; text-align: center;"></div>
+  </div>
+
+  <script src="script/converters/currency.js"></script>
+</body>
+</html>

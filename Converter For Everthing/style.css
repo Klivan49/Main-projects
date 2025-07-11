@@ -1,0 +1,45 @@
+h1{
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(197, 197, 197);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+    background-attachment: fixed;
+}
+
+.button{
+    justify-content: center;
+    border: 2px solid rgb(235, 32, 32);
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    background-image: radial-gradient(rgb(44, 189, 44), rgb(60, 56, 56));
+}
+
+.button:hover{
+    background-image: radial-gradient(rgb(230, 57, 57), rgb(60, 56, 56));
+    color: white;
+}
+
+.table {
+    background-color: white;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+td, th{
+    border: 1px, solid, gray;
+    text-align: left;
+    padding: auto;
+}

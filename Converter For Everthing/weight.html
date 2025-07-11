@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter For EVERTHING (nearly)</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1>Вводи вес</h1>
+    <div style="display: grid; justify-content: center; width: auto;">
+    <button class="button" onclick="location.href='index.html'">Обратно</button>
+    <table class="table">
+      <tr>
+        <th>Единицы измерения</th>
+        <th>Масса</th>
+      </tr>
+      <tr>
+        <td>Граммы</td>
+        <td><input type="number" id="g" oninput="convertFrom('g')"></td>
+      </tr>
+      <tr>
+        <td>Килограммы</td>
+        <td><input type="number" id="kg" oninput="convertFrom('kg')"></td>
+      </tr>
+      <tr>
+        <td>Тонны</td>
+        <td><input type="number" id="ton" oninput="convertFrom('ton')"></td>
+      </tr>
+      <tr>
+        <td>Караты</td>
+        <td><input type="number" id="karat" oninput="convertFrom('karat')"></td>
+      </tr>
+      <tr>
+        <td>Фунты</td>
+        <td><input type="number" id="pound" oninput="convertFrom('pound')"></td>
+      </tr>
+      <tr>
+        <td>Унции</td>
+        <td><input type="number" id="ounce" oninput="convertFrom('ounce')"></td>
+      </tr>
+      <tr>
+        <td>Центнер</td>
+        <td><input type="number" id="cent" oninput="convertFrom('cent')"></td>
+      </tr>
+    </table>
+    </div>
+  <script src="script/converters/weight.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter For EVERTHING (nearly)</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1>Вводи свою длину</h1>
+    <div style="display: grid; justify-content: center; width: auto;">
+    <button class="button" onclick="location.href='index.html'">Обратно</button>
+    <table class="table">
+      <tr>
+        <th>Единицы измерения</th>
+        <th>Длина</th>
+      </tr>
+      <tr>
+        <td>Сантиметры</td>
+        <td><input type="number" id="sm" oninput="convertFrom('sm')"></td>
+      </tr>
+      <tr>
+        <td>Дециметры</td>
+        <td><input type="number" id="dm" oninput="convertFrom('dm')"></td>
+      </tr>
+      <tr>
+        <td>Метры</td>
+        <td><input type="number" id="m" oninput="convertFrom('m')"></td>
+      </tr>
+      <tr>
+        <td>Километры</td>
+        <td><input type="number" id="km" oninput="convertFrom('km')"></td>
+      </tr>
+      <tr>
+        <td>Дюймы</td>
+        <td><input type="number" id="inch" oninput="convertFrom('inch')"></td>
+      </tr>
+      <tr>
+        <td>Футы</td>
+        <td><input type="number" id="foot" oninput="convertFrom('foot')"></td>
+      </tr>
+      <tr>
+        <td>Ярды</td>
+        <td><input type="number" id="yard" oninput="convertFrom('yard')"></td>
+      </tr>
+    </table>
+    </div>
+  <script src="script/converters/length.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input.invalid { background-color: #ffdddd; }
+    </style>
+</head>
+<body>
+    <h1>Вводи темпу</h1>
+    <div style="display: grid; justify-content: center; width: auto;">
+        <button class="button" onclick="location.href='index.html'">Обратно</button>
+        <table class="table">
+            <tr>
+                <th>Единицы измерения</th>
+                <th>Температура</th>
+            </tr>
+            <tr>
+                <td>Цельсии</td>
+                <td><input type="text" id="C" oninput="validateTemperatureInput(this, 'C')"></td>
+            </tr>
+            <tr>
+                <td>Фаренгейты</td>
+                <td><input type="text" id="F" oninput="validateTemperatureInput(this, 'F')"></td>
+            </tr>
+            <tr>
+                <td>Кельвины</td>
+                <td><input type="text" id="K" oninput="validateTemperatureInput(this, 'K')"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script/converters/temperature.js"></script>
+</body>
+</html>
