@@ -53,17 +53,6 @@ def check_and_fix_style(doc, config):
         if paragraph.text.strip().startswith('Рисунок'):
             issues += _fix_image_caption(paragraph, config.get('images', {}))
 
-    # 5. Проверка списка литературы
-    in_bib = False
-    bib_template = config.get('bibliography', {}).get('template')
-    for paragraph in doc.paragraphs:
-        if re.search(r'Список литературы', paragraph.text, re.IGNORECASE):
-            in_bib = True
-            continue
-        if in_bib and paragraph.text.strip():
-            if not re.match(bib_template, paragraph.text.strip()):
-                issues.append(f"Неправильная запись библиографии: '{paragraph.text.strip()[:50]}...' не соответствует шаблону.")
-
     return issues
 
 

@@ -1,0 +1,3 @@
+C:\Programming\Main-projects\Polska Zapis'\Лаборато.AB18A987\Debug\Лабораторная работа №8.vcxproj.AssemblyReference.cache
+C:\Programming\Main-projects\Polska Zapis'\Лаборато.AB18A987\Debug\Лабораторнаяработа8.lab8.resources
+C:\Programming\Main-projects\Polska Zapis'\Лаборато.AB18A987\Debug\Лабораторная работа №8.vcxproj.GenerateResource.cache
