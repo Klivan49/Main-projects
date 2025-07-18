@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Резюме Климовича Ивана</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input id="theme-switch" type="checkbox">
+  <div class="app">
+    <div class="theme-toggle-container">
+      <label for="theme-switch" class="toggle-wrapper">
+        <div class="toggle"></div>
+        <div class="labels">
+          <span class="label-light">Light</span>
+          <span class="label-dark">Dark</span>
+        </div>
+      </label>
+    </div>
+
+    <div class="resume-card">
+      <img src="Ya.jpg" alt="Фото" class="photo">
+      <div class="resume-header">
+        <h1>Климович Иван Вячеславович</h1>
+      </div>
+
+      <div class="section">
+        <h3>Контакты:</h3>
+        <ul class="contact-info" style="margin-left:1.5rem; display:table-row;">
+          <li>Телефон: +375 (44) 754-98-98</li>
+          <li>Telegram: @Kllivan</li>
+          <li>Email: kliiivan49@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Обо мне</h3>
+        <p>Мой путь в программировании начался примерно 3 года назад. Сначала я изучил основы языка Python, что дало мне представление о скриптовом программировании. Вскоре я освоил C# и занялся созданием игр на Unity вместе с другом, используя GitHub для совместного программирования. Также мы разработалм игровой движок на C++ с использованием библиотеки SFML 3.0.</p>
+        <p>После поступления в БГУИР на специальность цифровой маркетинг я начал углубленно изучать языки программирования C и C++ при выполнении множества лабораторных работ, что существенно расширило мои знания базовых алгоритмов и структур данных. Этот опыт заложил прочную основу в низкоуровневом программировании. Лучшие проекты доступны в моём профиле на GitHub.</p>
+        <p>Помимо учебы я помогал преподавателю проверять лабораторные работы по программированию, что позволило мне получить ценный опыт в анализе кода и внимании к деталям. Для ускорения работы над курсовыми проектами я написал на Python программу, которая проверяет и автоматически исправляет оформление курсовой и прилагая файл с описанием изменений. Этот проект также опубликован на моём GitHub.</p>
+        <p>В настоящее время я осваиваю веб-технологии: изучаю HTML, CSS и JavaScript для дальнейшего развития навыков. Данный сайт также написан мною в целях самообучения. В планах — углубленное изучение популярных фреймворков React и NestJS.</p>
+      </div>
+
+      <div class="section">
+        <h3>Навыки и технологии</h3>
+        <ul class="contact-info">
+          <li>Языки программирования: C#, C++, Python</li>
+          <li>Веб-технологии: HTML, CSS, JavaScript</li>
+          <li>Инструменты и фреймворки: Unity, React, NestJS, SFML 3.0, Git, GitHub</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Ссылки</h3>
+        <ul class="contact-info">
+          <li><a href="https://github.com/Klivan49/Main-projects.git" target="_blank">GitHub: github.com/Klivan49/Main-projects.git</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+  document.getElementById('theme-switch').addEventListener('change', e => {
+    document.body.classList.toggle('dark', e.target.checked);
+    localStorage.setItem('theme', e.target.checked ? 'dark' : 'light');
+  });
+  
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.getElementById('theme-switch').checked = true;
+    document.body.classList.add('dark');
+  }
+  </script>
+</body>
+</html>
